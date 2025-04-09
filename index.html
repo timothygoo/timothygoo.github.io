@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Epitome</title>
+    <title>Timothy's Portfolio</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -59,10 +59,8 @@
             </ul>
 
             <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/timothygoo" onclick="openPopup(event, this.href, 'LinkedIn');"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/timothygoo" onclick="openPopup(event, this.href, 'Instagram');"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
@@ -129,10 +127,13 @@
     
             <div class="row about-me__buttons">
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://www.linkedin.com/in/timothygoo/" class="btn btn--stroke full-width">Hire Me</a>
+                    <a href="https://www.linkedin.com/in/timothygoo/" class="btn btn--stroke full-width"
+                       onclick="openPopup(event, this.href, 'LinkedIn');">Hire Me</a>
                 </div>
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://drive.google.com/file/d/1lCr-MJ7lwH8_gydlh9y0s8RyNo-UTpKZ/view?usp=drive_link" class="btn btn--primary full-width">Download CV</a>
+                    <a href="https://drive.google.com/file/d/1lCr-MJ7lwH8_gydlh9y0s8RyNo-UTpKZ/view?usp=drive_link"
+                       class="btn btn--primary full-width"
+                       onclick="openPopup(event, this.href, 'Download CV');">Download CV</a>
                 </div>
             </div>
 
@@ -618,3 +619,10 @@
     <script src="js/main.js"></script>
 
 </body>
+<script>
+    function openPopup(event, url, title) {
+      event.preventDefault();
+      window.open(url, title, 'width=800,height=600,resizable=yes,scrollbars=yes');
+    }
+  </script>
+  
